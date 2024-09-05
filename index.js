@@ -27,7 +27,7 @@ console.log("Huruf lebih dari 4: " + newColors);
 const studentData = [
     {
         'name': 'Adam',
-        'score': 90,
+        'score': 80,
     },
     {
         'name': 'Marcel',
@@ -46,3 +46,28 @@ const studentData = [
 studentData.sort((prev, next) => next.score - prev.score);
 
 console.log(studentData);
+
+studentData.sort((prev, next) => prev.name.localeCompare(next.name));
+
+console.log(studentData);
+
+// const studentDataMultiScore = [
+//     {
+//         'name': 'Adam',
+//         'score': [90, 50, 70, 80],
+//     },
+//     {
+//         'name': 'Marcel',
+//         'score': [100, 50, 90, 80],
+//     },
+//     {
+//         'name': 'Ditra',
+//         'score': [80, 40, 70, 90],
+//     },
+//     {
+//         'name': 'Kharisma',
+//         'score': [100, 20, 90, 80],
+//     },
+// ]
+
+// studentDataMultiScore.sort((a, b) => a.score - b.score);
