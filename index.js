@@ -20,3 +20,29 @@ const newColors = colors.filter(function(data){
 });
 
 console.log("Huruf lebih dari 4: " + newColors);
+
+
+// Hasil Explore
+
+const studentData = [
+    {
+        'name': 'Adam',
+        'score': 90,
+    },
+    {
+        'name': 'Marcel',
+        'score': 95,
+    },
+    {
+        'name': 'Ditra',
+        'score': 60,
+    },
+    {
+        'name': 'Kharisma',
+        'score': 100,
+    },
+]
+
+studentData.sort((prev, next) => next.score - prev.score);
+
+console.log(studentData);
