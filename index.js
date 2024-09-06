@@ -125,6 +125,22 @@ const videoData = [
 
   videoData.forEach(data => {
     if(data.present == true) {
-      console.log(data);
+    //   console.log(data);
     }
   });
+
+  let collectionScore = [100, 200, 300, 400];
+
+  let newColl = collectionScore.map(function(data){
+    return data * 2;
+  });
+
+  let tampung = [];
+  
+  let newColl2 = collectionScore.forEach(data => {
+    tampung.push(data * 2);
+    return data * 2;
+  });
+
+  console.log(newColl);
+  console.log(tampung);
